@@ -1,0 +1,29 @@
+html
+{
+    background-color: #fafafa;
+}
+
+#nav
+{
+    background-color: #2e2e2e;
+    display: flex;
+    width: 100%;
+    margin-top: -.625%;
+    margin-left: -1.7%;
+    margin: none;
+    list-style: none;
+    flex-direction: row;
+}
+
+#nav li
+{
+    color: lightgray;
+    margin: 0px 1px;
+    padding: 17.5px;
+}
+
+#nav li:hover
+{
+    background-color: rgb(155, 155, 155);
+    color: black;
+}
