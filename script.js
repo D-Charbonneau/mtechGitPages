@@ -2,14 +2,12 @@ var x = 0;
 
 function test()
 {
-    // Pls work
     document.getElementById("rec").innerHTML = recursion(2048);
 }
 
 function func()
 {
     x++;
-    console.log(x);
     if(x % 2 == 1)
     {
         document.getElementById("hello").innerHTML = "HELLO WORLD!";
@@ -30,8 +28,6 @@ function recursion(z)
     }
     else
     {   
-        console.log(z);
         return z + " " + recursion(z/2);
-        
     }
 }
