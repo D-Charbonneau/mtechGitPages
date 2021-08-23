@@ -26,6 +26,6 @@ function recursion(z)
     {   
         
         document.getElementById("rec").innerHTML = "Please wait...";
-        w = z + " " + recursion(z/2);
+        w += recursion(z/2);
     }
 }
