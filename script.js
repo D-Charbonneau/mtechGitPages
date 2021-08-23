@@ -2,6 +2,7 @@ var x = 0;
 
 function test()
 {
+    // Pls work
     document.getElementById("rec").innerHTML = recursion(2048);
 }
 
