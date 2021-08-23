@@ -1,8 +1,14 @@
 var x = 0;
 
+function test()
+{
+    document.getElementById("rec").innerHTML = recursion(2048);
+}
+
 function func()
 {
     x++;
+    console.log(x);
     if(x % 2 == 1)
     {
         document.getElementById("hello").innerHTML = "HELLO WORLD!";
@@ -14,18 +20,17 @@ function func()
         document.getElementById("hello").style.color = "blue";
     }
 }
-var y = 2048;
-var w = "";
+
 function recursion(z)
 {
     if(z == 1)
     {
-        document.getElementById("rec").innerHTML = w;
+        return(1);
     }
     else
     {   
+        console.log(z);
+        return z + " " + recursion(z/2);
         
-        document.getElementById("rec").innerHTML = "Please wait...";
-        w += recursion(z/2);
     }
 }
